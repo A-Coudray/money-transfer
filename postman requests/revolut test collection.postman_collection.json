@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "revolut test collection",
+		"_postman_id": "feb4fe90-bda8-6850-2f52-8c82e9b35760",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/create/account",
+			"request": {
+				"url": "http://localhost:8080/create/account",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\" : \"1\",\n\"email\" : \"test@test.com\",\n\"surname\" : \"testName\",\n\"firstname\" :\"testFirstName\", \n\"accountBalance\" : 1234\n\n\n\n}"
+				},
+				"description": "Create an ccount"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/accounts/2",
+			"request": {
+				"url": "http://localhost:8080/accounts/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/accounts/1",
+			"request": {
+				"url": "http://localhost:8080/accounts/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\" : \"1234567\",\n\"email\" : \"test@test.com\",\n\"surname\" : \"testName\",\n\"firstname\" :\"testFirstName\", \n\"accountBalance\" : null\n\n\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/accounts",
+			"request": {
+				"url": "http://localhost:8080/accounts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/transactions/transfert",
+			"request": {
+				"url": "http://localhost:8080/transactions/transfert",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"source\" :\"1\", \"destination\" : \"2\", \"amount\" :\"10000\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
