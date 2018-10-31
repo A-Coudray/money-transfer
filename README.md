@@ -6,3 +6,4 @@ You can also directly clone the project and run maven clean install to build it 
 
 A postman collection is available for manual testing.
 
+A soap UI project is also available for automated testing.
