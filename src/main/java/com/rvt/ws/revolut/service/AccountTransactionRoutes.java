@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut;
+package com.rvt.ws.revolut.service;
 
 import java.util.List;
 

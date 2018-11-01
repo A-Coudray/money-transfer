@@ -1,8 +1,8 @@
-package com.rvt.ws.revolut.test;
+package com.rvt.ws.revolut;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.rvt.ws.revolut.dao.AccountDao;
@@ -15,8 +15,7 @@ public class AccountDaoTest {
 	public static Account testAcc2 = new Account();
 	public static Account testAcc3 = new Account();
 	
-	
-	@Before
+	@BeforeEach
 	public void setup() {
 		// Clean up the db before each step
 		dao = new AccountDao();

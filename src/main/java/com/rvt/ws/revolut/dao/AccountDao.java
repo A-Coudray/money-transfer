@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rvt.ws.revolut.model.Account;
 
 
-public class AccountDao {
+public class AccountDao implements IAccountDao {
 	
 	private final ObjectMapper om = new ObjectMapper();
 	private final ConcurrentMap<String, Account> accountMap;
@@ -33,6 +33,7 @@ public class AccountDao {
 	 * @param acc
 	 * @return
 	 */
+    @Override
     public Account createAccount(Account acc) {
     	
     	
@@ -51,7 +52,7 @@ public class AccountDao {
      * @param email
      * @return the deleted user
      */
-    
+    @Override
     public Account deleteAccount (String id) {
     	
     	return accountMap.remove(id);
@@ -62,6 +63,7 @@ public class AccountDao {
      * @param email
      * @return the user
      */
+    @Override
     public Account getAccount(String id) {
     	return accountMap.get(id);
     	
@@ -72,7 +74,7 @@ public class AccountDao {
      * @param user
      * @return the update user
      */
-    
+    @Override
     public Account updateAccount(Account account) {
         // the user didn't previously exist, return null
         if (null == accountMap.replace(account.getId(), account) ) {
@@ -93,7 +95,7 @@ public class AccountDao {
      * Get the users in the map, sorted by email
      * @return the sorted users list
      */
-    
+    @Override
     public List<Account> getAccountsList (){
     	
         return accountMap.values()

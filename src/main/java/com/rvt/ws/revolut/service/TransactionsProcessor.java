@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut;
+package com.rvt.ws.revolut.service;
 
 import com.rvt.ws.revolut.dao.AccountDao;
 import com.rvt.ws.revolut.dao.DaoException;
