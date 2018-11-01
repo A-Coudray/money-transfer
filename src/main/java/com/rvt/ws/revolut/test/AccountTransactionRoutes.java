@@ -14,11 +14,10 @@ import org.rapidoid.http.Req;
 import org.rapidoid.http.Resp;
 
 import com.rvt.ws.revolut.test.dao.AccountDao;
+import com.rvt.ws.revolut.test.dao.DaoException;
 import com.rvt.ws.revolut.test.model.Account;
 import com.rvt.ws.revolut.test.model.RevolutTransaction;
-import com.rvt.ws.revolut.test.processor.TransactionsProcessor;
 
-import exceptions.DaoException;
 
 
 /**
@@ -96,8 +95,15 @@ public class AccountTransactionRoutes {
         }
         else {
         	Account acc = accountDao.updateAccount(account);
-        	resp.code(HttpStatus.SC_OK);
-        	resp.result(acc);
+        	if (null == acc) {
+               	resp.code(HttpStatus.SC_NOT_FOUND);
+            	resp.result("Account not found.");
+        	}
+        	else {
+               	resp.code(HttpStatus.SC_OK);
+            	resp.result(acc);
+        	}
+ 
         }
 		
 		return resp;
