@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.test.dao;
+package com.rvt.ws.revolut.dao;
 
 import java.util.Comparator;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rvt.ws.revolut.test.model.Account;
+import com.rvt.ws.revolut.model.Account;
 
 
 public class AccountDao {

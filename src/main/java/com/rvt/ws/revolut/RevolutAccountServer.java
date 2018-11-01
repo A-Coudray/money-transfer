@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.test;
+package com.rvt.ws.revolut;
 
 
 import org.rapidoid.setup.App;

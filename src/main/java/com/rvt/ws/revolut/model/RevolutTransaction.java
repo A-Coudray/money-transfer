@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.test.model;
+package com.rvt.ws.revolut.model;
 
 public class RevolutTransaction {
 	

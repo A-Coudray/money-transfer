@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.test;
+package com.rvt.ws.revolut;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ import org.rapidoid.annotation.PUT;
 import org.rapidoid.http.Req;
 import org.rapidoid.http.Resp;
 
-import com.rvt.ws.revolut.test.dao.AccountDao;
-import com.rvt.ws.revolut.test.dao.DaoException;
-import com.rvt.ws.revolut.test.model.Account;
-import com.rvt.ws.revolut.test.model.RevolutTransaction;
+import com.rvt.ws.revolut.dao.AccountDao;
+import com.rvt.ws.revolut.dao.DaoException;
+import com.rvt.ws.revolut.model.Account;
+import com.rvt.ws.revolut.model.RevolutTransaction;
 
 
 

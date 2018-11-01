@@ -5,8 +5,8 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
-import com.rvt.ws.revolut.test.dao.AccountDao;
-import com.rvt.ws.revolut.test.model.Account;
+import com.rvt.ws.revolut.dao.AccountDao;
+import com.rvt.ws.revolut.model.Account;
 
 public class AccountDaoTest {
 	

@@ -7,8 +7,9 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.rvt.ws.revolut.test.model.Account;
-import com.rvt.ws.revolut.test.model.RevolutTransaction;
+import com.rvt.ws.revolut.RevolutAccountServer;
+import com.rvt.ws.revolut.model.Account;
+import com.rvt.ws.revolut.model.RevolutTransaction;
 
 import static org.junit.Assert.assertEquals;
 

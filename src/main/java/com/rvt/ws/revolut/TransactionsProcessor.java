@@ -1,8 +1,8 @@
-package com.rvt.ws.revolut.test;
+package com.rvt.ws.revolut;
 
-import com.rvt.ws.revolut.test.dao.AccountDao;
-import com.rvt.ws.revolut.test.dao.DaoException;
-import com.rvt.ws.revolut.test.model.Account;
+import com.rvt.ws.revolut.dao.AccountDao;
+import com.rvt.ws.revolut.dao.DaoException;
+import com.rvt.ws.revolut.model.Account;
 
 
 public class TransactionsProcessor {
