@@ -16,7 +16,7 @@ import org.rapidoid.http.Resp;
 import com.rest.api.ws.dao.AccountDao;
 import com.rest.api.ws.dao.DaoException;
 import com.rest.api.ws.model.Account;
-import com.rest.api.ws.model.RevolutTransaction;
+import com.rest.api.ws.model.BankTransaction;
 
 
 
@@ -121,7 +121,7 @@ public class AccountTransactionRoutes {
 	}
 	
 	@POST("/transactions/transfert")
-	public Resp processTransfert(RevolutTransaction trans, Req req) {
+	public Resp processTransfert(BankTransaction trans, Req req) {
 		Resp resp = req.response();
 		
 		try {

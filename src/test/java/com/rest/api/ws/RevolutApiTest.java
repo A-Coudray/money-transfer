@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.rest.api.ws.RevolutAccountServer;
+import com.rest.api.ws.BankAccountServer;
 import com.rest.api.ws.model.Account;
-import com.rest.api.ws.model.RevolutTransaction;
+import com.rest.api.ws.model.BankTransaction;
 
 import static org.junit.Assert.assertEquals;
 
@@ -37,7 +37,7 @@ public class RevolutApiTest {
 		
 		String[] args = new String[0];
 		
-		RevolutAccountServer.main(args);
+		BankAccountServer.main(args);
 		
 		testAcc1.setId("1");
 		testAcc1.setAccountBalance((long) 1000);
@@ -69,7 +69,7 @@ public class RevolutApiTest {
 	@AfterAll 
 	public static void cleanup() {
 		// stop the server
-		RevolutAccountServer.shutdown();
+		BankAccountServer.shutdown();
 	}
 	
 	@Test
@@ -192,7 +192,7 @@ public class RevolutApiTest {
 	@Test 
 	public void transactionTest() {
 		
-		RevolutTransaction tran = new RevolutTransaction();
+		BankTransaction tran = new BankTransaction();
 		tran.setAmount((long) 100);
 		tran.setSource("1");
 		tran.setDestination("2");
@@ -220,7 +220,7 @@ public class RevolutApiTest {
 	@Test 
 	public void transactionTestSourceUnknown() {
 		
-		RevolutTransaction tran = new RevolutTransaction();
+		BankTransaction tran = new BankTransaction();
 		tran.setAmount((long) 100);
 		tran.setSource("1000");
 		tran.setDestination("2");
@@ -234,7 +234,7 @@ public class RevolutApiTest {
 	@Test 
 	public void transactionTestDestinationUnknown() {
 		
-		RevolutTransaction tran = new RevolutTransaction();
+		BankTransaction tran = new BankTransaction();
 		tran.setAmount((long) 100);
 		tran.setSource("1");
 		tran.setDestination("2000");
@@ -275,7 +275,7 @@ public class RevolutApiTest {
                 .accept(MediaType.APPLICATION_JSON_TYPE).get();
     }
     
-    private Response sendTransactionRequest(RevolutTransaction trans) {
+    private Response sendTransactionRequest(BankTransaction trans) {
         return client.target("http://localhost:8080/transactions/transfert").request(MediaType.APPLICATION_JSON_TYPE)
                 .accept(MediaType.APPLICATION_JSON_TYPE).post(Entity.json(trans));
     }

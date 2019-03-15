@@ -9,7 +9,7 @@ import org.rapidoid.setup.App;
  * @author acoudray
  *
  */
-public class RevolutAccountServer {
+public class BankAccountServer {
 	
 
     public static void main(String[] args) {

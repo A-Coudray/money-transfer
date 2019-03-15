@@ -1,6 +1,6 @@
 package com.rest.api.ws.model;
 
-public class RevolutTransaction {
+public class BankTransaction {
 	
 	private String source;
 	
