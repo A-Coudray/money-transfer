@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.model;
+package com.rest.api.ws.model;
 
 public class RevolutTransaction {
 	

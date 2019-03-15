@@ -1,12 +1,12 @@
-package com.rvt.ws.revolut;
+package com.rest.api.ws;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.rvt.ws.revolut.dao.AccountDao;
-import com.rvt.ws.revolut.model.Account;
+import com.rest.api.ws.dao.AccountDao;
+import com.rest.api.ws.model.Account;
 
 public class AccountDaoTest {
 	

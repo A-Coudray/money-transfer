@@ -1,8 +1,8 @@
-package com.rvt.ws.revolut.service;
+package com.rest.api.ws.service;
 
-import com.rvt.ws.revolut.dao.AccountDao;
-import com.rvt.ws.revolut.dao.DaoException;
-import com.rvt.ws.revolut.model.Account;
+import com.rest.api.ws.dao.AccountDao;
+import com.rest.api.ws.dao.DaoException;
+import com.rest.api.ws.model.Account;
 
 
 public class TransactionsProcessor {

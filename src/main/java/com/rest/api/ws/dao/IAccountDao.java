@@ -1,8 +1,8 @@
-package com.rvt.ws.revolut.dao;
+package com.rest.api.ws.dao;
 
 import java.util.List;
 
-import com.rvt.ws.revolut.model.Account;
+import com.rest.api.ws.model.Account;
 
 public interface IAccountDao {
 

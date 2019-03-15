@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.dao;
+package com.rest.api.ws.dao;
 
 import java.util.Comparator;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rvt.ws.revolut.model.Account;
+import com.rest.api.ws.model.Account;
 
 
 public class AccountDao implements IAccountDao {

@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut.dao;
+package com.rest.api.ws.dao;
 
 public class DaoException extends Exception {
 	

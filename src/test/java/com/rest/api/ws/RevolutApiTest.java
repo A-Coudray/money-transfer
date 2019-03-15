@@ -1,4 +1,4 @@
-package com.rvt.ws.revolut;
+package com.rest.api.ws;
 
 import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.jackson.JacksonFeature;
@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.rvt.ws.revolut.RevolutAccountServer;
-import com.rvt.ws.revolut.model.Account;
-import com.rvt.ws.revolut.model.RevolutTransaction;
+import com.rest.api.ws.RevolutAccountServer;
+import com.rest.api.ws.model.Account;
+import com.rest.api.ws.model.RevolutTransaction;
 
 import static org.junit.Assert.assertEquals;
 
