@@ -14,7 +14,7 @@ Quick Start
 To run the program, just use the usual java -jar command on the .jar file generated in the target directory :
 
 ```
-> java -jar revolut-test-0.0.1-SNAPSHOT-shaded.jar
+> java -jar http-rest-api-0.0.1-SNAPSHOT-shaded.jar
 ```
 
 The server will be automaically started on port 8080. There is no configuration needed.

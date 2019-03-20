@@ -12,6 +12,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
+				archiveArtifacts artifacts: 'target/*shaded.jar', fingerprint: true
             }
         }
 		stage('Test') {
