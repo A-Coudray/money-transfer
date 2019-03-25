@@ -1,7 +1,9 @@
 package com.money.transfer.ws.model;
 
+import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 
+@Entity
 public class Account {
 	
 	@NotNull

@@ -10,6 +10,7 @@ import org.rapidoid.annotation.DELETE;
 import org.rapidoid.annotation.GET;
 import org.rapidoid.annotation.POST;
 import org.rapidoid.annotation.PUT;
+import org.rapidoid.annotation.Valid;
 import org.rapidoid.http.Req;
 import org.rapidoid.http.Resp;
 
@@ -40,7 +41,7 @@ public class AccountTransactionRoutes {
 	 * @return
 	 */
 	@POST("/create/account")
-	public Resp createAccount (Account account, Req req) {
+	public Resp createAccount (@Valid Account account, Req req) {
 		
 		Resp resp = req.response();
 		
@@ -88,7 +89,7 @@ public class AccountTransactionRoutes {
 	 * @return
 	 */
 	@PUT("/accounts/{id}") 
-	public Resp updateAccount (Account account, Req req) {
+	public Resp updateAccount (@Valid Account account, Req req) {
 		Resp resp = req.response();
         if (null == account.getAccountBalance()) {
         	LOGGER.error(String.format("Invalid account balance value for %s.", account.getId()));
@@ -121,7 +122,7 @@ public class AccountTransactionRoutes {
 	}
 	
 	@POST("/transactions/transfert")
-	public Resp processTransfert(BankTransaction trans, Req req) {
+	public Resp processTransfert(@Valid BankTransaction trans, Req req) {
 		Resp resp = req.response();
 		
 		try {
