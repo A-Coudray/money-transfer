@@ -1,8 +1,8 @@
-package com.rest.api.ws.dao;
+package com.money.transfer.ws.dao;
 
 import java.util.List;
 
-import com.rest.api.ws.model.Account;
+import com.money.transfer.ws.model.Account;
 
 public interface IAccountDao {
 

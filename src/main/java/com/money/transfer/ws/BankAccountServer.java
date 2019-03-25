@@ -1,4 +1,4 @@
-package com.rest.api.ws;
+package com.money.transfer.ws;
 
 
 import org.rapidoid.setup.App;

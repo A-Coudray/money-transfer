@@ -1,4 +1,4 @@
-package com.rest.api.ws.model;
+package com.money.transfer.ws.model;
 
 import javax.validation.constraints.NotNull;
 

@@ -1,4 +1,4 @@
-HTTP-Rest-Api / V0.0.1
+Money Transfer HTTP-Rest-Api / V0.0.1
 ===
 
 
@@ -14,7 +14,7 @@ Quick Start
 To run the program, just use the usual java -jar command on the .jar file generated in the target directory :
 
 ```
-> java -jar http-rest-api-0.0.1-SNAPSHOT-shaded.jar
+> java -jar money-transfer-0.0.1-SNAPSHOT-shaded.jar
 ```
 
 The server will be automaically started on port 8080. There is no configuration needed.

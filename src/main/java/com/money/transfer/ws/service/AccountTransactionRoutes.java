@@ -1,4 +1,4 @@
-package com.rest.api.ws.service;
+package com.money.transfer.ws.service;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ import org.rapidoid.annotation.PUT;
 import org.rapidoid.http.Req;
 import org.rapidoid.http.Resp;
 
-import com.rest.api.ws.dao.AccountDao;
-import com.rest.api.ws.dao.DaoException;
-import com.rest.api.ws.model.Account;
-import com.rest.api.ws.model.BankTransaction;
+import com.money.transfer.ws.dao.AccountDao;
+import com.money.transfer.ws.dao.DaoException;
+import com.money.transfer.ws.model.Account;
+import com.money.transfer.ws.model.BankTransaction;
 
 
 

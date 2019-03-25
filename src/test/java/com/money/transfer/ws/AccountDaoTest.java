@@ -1,12 +1,12 @@
-package com.rest.api.ws;
+package com.money.transfer.ws;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.rest.api.ws.dao.AccountDao;
-import com.rest.api.ws.model.Account;
+import com.money.transfer.ws.dao.AccountDao;
+import com.money.transfer.ws.model.Account;
 
 public class AccountDaoTest {
 	

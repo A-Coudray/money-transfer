@@ -1,4 +1,4 @@
-package com.rest.api.ws.dao;
+package com.money.transfer.ws.dao;
 
 public class DaoException extends Exception {
 	

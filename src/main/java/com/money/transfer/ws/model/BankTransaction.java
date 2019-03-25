@@ -1,4 +1,4 @@
-package com.rest.api.ws.model;
+package com.money.transfer.ws.model;
 
 public class BankTransaction {
 	

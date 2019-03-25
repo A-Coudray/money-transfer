@@ -1,4 +1,4 @@
-package com.rest.api.ws;
+package com.money.transfer.ws;
 
 import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.jackson.JacksonFeature;
@@ -7,9 +7,9 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import com.rest.api.ws.BankAccountServer;
-import com.rest.api.ws.model.Account;
-import com.rest.api.ws.model.BankTransaction;
+import com.money.transfer.ws.BankAccountServer;
+import com.money.transfer.ws.model.Account;
+import com.money.transfer.ws.model.BankTransaction;
 
 import static org.junit.Assert.assertEquals;
 

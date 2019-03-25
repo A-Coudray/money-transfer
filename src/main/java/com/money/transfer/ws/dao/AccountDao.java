@@ -1,4 +1,4 @@
-package com.rest.api.ws.dao;
+package com.money.transfer.ws.dao;
 
 import java.util.Comparator;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rest.api.ws.model.Account;
+import com.money.transfer.ws.model.Account;
 
 
 public class AccountDao implements IAccountDao {
